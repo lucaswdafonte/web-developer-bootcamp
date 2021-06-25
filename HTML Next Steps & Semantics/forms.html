@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="#">
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="color">Choose a color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>Hijacking searchs</h1>
+
+    <h2>Reddit Search</h2>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>search reddit</button>
+    </form>
+
+    <h2>Google Search</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>search google</button>
+    </form>
+
+    <h2>Youtube Search</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>search youtube</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="">
+        <p>
+            <label for="agree">Agree</label>
+            <input type="checkbox" name="agree_tos" id="agree">
+        </p>
+
+        <p>
+            <label for="p">P</label>
+            <input type="radio" name="size" id="p" value="p">
+
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+
+            <label for="G">G</label>
+            <input type="radio" name="size" id="g" value="g">
+        </p>
+
+        <p>
+            <label for="pet">what kind of pet do you have?</label>
+            <select name="pet" id="pet">
+                <option value="cat">cat</option>
+                <option value="fish" selected>fish</option>
+                <option value="dog">dog</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume_level" min="0" max="100" step="2" value="23">
+        </p>
+        <button>submit</button>
+
+        <p>
+            <label for="whatever">Write what you want</label>
+            <textarea name="whatever_text" id="whatever" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dale">
+        <div>
+            <label for="first">First Name:</label>
+            <input type="text" name="first" id="first" required>
+        </div>
+        <div>
+            <label for="middle">Middle Name:</label>
+            <input type="text" name="middle" id="middle" minlength="4" maxlength="10">
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
